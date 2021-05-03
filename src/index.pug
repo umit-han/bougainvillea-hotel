@@ -1,0 +1,235 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Bougainvillea Hotel
+        link(rel="stylesheet", href="css/app.min.css")
+    body 
+        header.header.f-center
+            div.container
+                div.nav
+                    a(href="index.html")
+                        img(src="image/bougainvillea.png").nav__logo
+                    ul.nav__menu
+                        li.nav__menu__item
+                            a(href="index.html").nav__menu__link HOME
+                        li.nav__menu__item
+                            a(href="#").nav__menu__link ROOMS
+                        li.nav__menu__item
+                            a(href="#").nav__menu__link GALLERY
+                        li.nav__menu__item
+                            a(href="#").nav__menu__link ABOUT
+
+                    a(href="#").btn.btn-primary.dn-md BOOK NOW
+
+                    div.nav__mobile
+                        img.nav__mobile__button#navOpenBtn(src="./image/icons/mobile-button.svg", alt="icon")
+                        div.nav__mobile__group 
+                            span.nav__mobile__close-icon#navCloseBtn X
+                            ul.nav__mobile__list
+                                li.nav__mobile__item
+                                    a(href="index.html").nav__mobile__link HOME
+                                li.nav__mobile__item
+                                    a(href="#").nav__mobile__link ROOMS
+                                li.nav__mobile__item
+                                    a(href="#").nav__mobile__link GALLERY
+                                li.nav__mobile__item
+                                    a(href="#").nav__mobile__link ABOUT
+
+        main.main
+            section.banner.f-center#banner
+                div.banner__transparent-box
+                div.container
+                    div.banner__group
+                        h1.banner__title.hero-title 
+                            | Welcome the<br>
+                            | <span> Bougainvillea</span> Hotel
+                        h2.banner__subtitle.hero-text
+                            |This quote best describes how we would  want our   guests to feel. <br>
+                            |Though we are nestled in the heart  of Bougainvillea.
+                        a(href="#").btn.btn-primary DISCOVER MORE
+            div.check
+                form(action="")
+                    div.check__input-group
+                        span.check__title
+                        input(type="date").check__input
+            section.rooms#rooms
+                div.container.f-md-colm-center
+                    h1.rooms__title.section-title Best Rooms
+                    div.col-2-sm-1
+                        div.rooms__img-two
+                            div.rooms__img-group.rooms__img-group--small
+                                img(src="./image/room-img-1.png" alt="image").rooms__img-small.rooms__img-all
+                                div.rooms__img-info
+                                    p.rooms__img-text.small-title ORIENTAL
+                                    span.rooms__img-stars
+                                        - for(var i = 0; i < 5; i++) {
+                                            img(src="./image/icons/star.svg"  alt="star").rooms__img-star
+                                        - }
+                            div.rooms__img-group.rooms__img-group--small
+                                img(src="./image/room-img-2.png" alt="image").rooms__img-small.rooms__img-all
+                                div.rooms__img-info
+                                    p.rooms__img-text.small-title SUPREME
+                                    span.rooms__img-stars
+                                        - for(var i = 0; i < 4; i++) {
+                                            img(src="./image/icons/star.svg"  alt="star").rooms__img-star
+                                        - }
+                        div.rooms__img-one
+                            div.rooms__img-group.rooms__img-group--large
+                                img(src="./image/room-img-3.png" alt="image").rooms__img-large.rooms__img-all
+                                div.rooms__img-info
+                                    p.rooms__img-text.small-title SIERRA
+                                    span.rooms__img-stars
+                                        - for(var i = 0; i < 5; i++) {
+                                            img(src="./image/icons/star.svg"  alt="star").rooms__img-star
+                                        - }
+
+                        div.rooms__img-one
+                            div.rooms__img-group.rooms__img-group--large
+                                img(src="./image/room-img-4.png" alt="image").rooms__img-large.rooms__img-all
+                                div.rooms__img-info
+                                    p.rooms__img-text.small-title ATLANTIS
+                                    span.rooms__img-stars
+                                        - for(var i = 0; i < 5; i++) {
+                                            img(src="./image/icons/star.svg"  alt="star").rooms__img-star
+                                        - }
+                        div.rooms__img-two
+                            div.rooms__img-group.rooms__img-group--small
+                                img(src="./image/room-img-5.png" alt="image").rooms__img-small.rooms__img-all
+                                div.rooms__img-info
+                                    p.rooms__img-text.small-title FANCY
+                                    span.rooms__img-stars
+                                        - for(var i = 0; i < 5; i++) {
+                                            img(src="./image/icons/star.svg"  alt="star").rooms__img-star
+                                        - }
+                            div.rooms__img-group.rooms__img-group--small
+                                img(src="./image/room-img-6.png" alt="image").rooms__img-small.rooms__img-all
+                                div.rooms__img-info
+                                    p.rooms__img-text.small-title IVORY
+                                    span.rooms__img-stars
+                                        - for(var i = 0; i < 3; i++) {
+                                            img(src="./image/icons/star.svg"  alt="star").rooms__img-star
+                                        - }
+            section.why-choose#why-choose
+                div.container
+                    h1.why-choose__title.section-title Why Choose <span>Bougainvillea?</span>
+                    div.col-3-md-2-sm-1
+                        div.why-choose__group
+                            img(src="./image/icons/wallet.png" alt="icon").why-choose__icon
+                            div.why-choose__info
+                                h2.why-choose__head.text2 Best Price Guarantee
+                                p.why-choose__text.text
+                                    | Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Suspendisse sollicitudin velit sed leo.
+                        div.why-choose__group
+                            img(src="./image/icons/calender.png" alt="icon").why-choose__icon
+                            div.why-choose__info
+                                h2.why-choose__head.text2 Book Now to Secure Availability
+                                p.why-choose__text.text
+                                    | Ut pharetra augue nec augue. Nam elit agna,endrerit sit amet, tincidunt ac, viverra sed, nulla. Donec porta diam eu massa.
+                        div.why-choose__group
+                            img(src="./image/icons/time.png" alt="icon").why-choose__icon
+                            div.why-choose__info
+                                h2.why-choose__head.text2 Late Check-out on Request
+                                p.why-choose__text.text
+                                    | Quisque diam lorem, interdum vitae,dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum.
+                        div.why-choose__group
+                            img(src="./image/icons/wi-fi.png" alt="icon").why-choose__icon
+                            div.why-choose__info
+                                h2.why-choose__head.text2 Free Wi-Fi Available
+                                p.why-choose__text.text
+                                    | Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante.
+                        div.why-choose__group
+                            img(src="./image/icons/check.png" alt="icon").why-choose__icon
+                            div.why-choose__info
+                                h2.why-choose__head.text2 Meetings & Special Events
+                                p.why-choose__text.text
+                                    | Lorem ipsum dolor sit amet, consectetuer adipisMauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet.
+                        div.why-choose__group
+                            img(src="./image/icons/serving.png" alt="icon").why-choose__icon
+                            div.why-choose__info
+                                h2.why-choose__head.text2 Free Cancellation Anytime
+                                p.why-choose__text.text
+                                    | In pede mi, aliquet sit amet, euismod in,auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim.
+            section.customer-comments#customer-comments
+                div.container
+                    div.customer-comments__group
+                        div.customer-comments__stars
+                            - for(var i = 0; i < 5; i++) {
+                              img(src="./image/icons/star-primary.svg"  alt="star").customer-comments__img-star
+                            - }
+                        h2.customer-comments__commnet
+                            | <span>‘‘</span> The hotel located in the city center and lots of public transport, nearby restaurants, bars etc. The hotel staff are nice and friendly. The room a bit small but the bed is really comfortable. <span>’’</span>
+                        p.customer-comments__customer
+                            | HANNAH & STEVE CHRISTIAN
+
+            section.feel-special#feel-special
+                div.container.f-md-colm-center 
+                    h1.feel-special__title.section-title Feel Special
+                    div.col-3-sm-1
+                        div.card
+                            div.card__head
+                                img.card__img(src="./image/card-img-1.png", alt="image")
+                            div.card__body
+                                h2.card__title Special SPA Center
+                                p.card__text 
+                                    | Designed with a naturally lit, 18-meter lap pool and state-of-the-art technogym fitness center, square nine’s tranquil wellness sanctuary is equipped with sauna and steam rooms, japanese ofuro tub...
+                                a.btn-more(href="#") LEARN MORE <span>&#10140;</span>
+                        div.card
+                            div.card__head
+                                img.card__img(src="./image/card-img-2.png", alt="image")
+                            div.card__body
+                                h2.card__title Unique World Kitchen
+                                p.card__text 
+                                    | Intimate lobby bar, fine dining room and courtyard, or rooftop japanese restaurant, square nine’s elegant atmosphere, international wine and spirit lists, and world-class cuisine render it among...
+                                a.btn-more(href="#") LEARN MORE <span>&#10140;</span>
+                        div.card
+                            div.card__head
+                                img.card__img(src="./image/card-img-3.png", alt="image")
+                            div.card__body
+                                h2.card__title Award-Winning Bar
+                                p.card__text 
+                                    | Square nine overlooks trendy dorcol, one of the belgrade’s oldest neighbourhoods. The hotel is walking distance to many popular sites including knez mihailova, the city’s bustling pedestrian boulevard...
+                                a.btn-more(href="#") LEARN MORE <span>&#10140;</span>
+
+
+        footer.footer#footer
+            div.container
+                div.footer__groups
+                    div.footer__group.footer__group--logo
+                        img.footer__group__img(src="./image/bougainvillea.png", alt="logo")
+                        div.footer__group__text
+                            span © 2010 — 2020
+                            span Privacy — Terms 
+                    div.footer__group.footer__group--contact
+                        h2.footer__group__title.small-title Contact
+                        div.footer__group__text
+                            span Privacy10, Clopotarii Vechi St. Zurich
+                            span +41 (44) 325 54 52
+                            span info@bougainvillea.com
+                    div.footer__group.footer__group--product
+                        h2.footer__group__title.small-title Product
+                        div.footer__group__text
+                            a(href="#") About
+                            a(href="#") Special Offers
+                            a(href="#") News
+                            a(href="#") Contact Us
+                    div.footer__group.footer__group--features
+                        h2.footer__group__title.small-title Features
+                        div.footer__group__text
+                            span Wellness & Spa
+                            span Restaurants & Bars
+                            span Excursions
+                            span Events
+                    div.footer__group.footer__group--resources
+                        h2.footer__group__title.small-title Resources 
+                        div.footer__group__text
+                            span Classic
+                            span Superior
+                            span Deluxe
+                            span Master
+
+
+    script(src="./js/jquery-3.6.0.min.js")
+    script(src="./js/app.min.js")

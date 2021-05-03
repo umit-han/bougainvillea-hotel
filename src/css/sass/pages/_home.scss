@@ -1,0 +1,262 @@
+// Rooms section
+.rooms {
+    background-color: $color-bg-primary;
+    padding: 128px 0 64px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        color: $color-base-9;
+        font-family: $ff-domine-700;
+        text-align: center;
+        margin-bottom: 64px;
+
+        @include media600 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__img-two {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 15px;
+        max-width: 570px;
+        width: 100%;
+
+        @include media660 {
+            max-width: 328px;
+        }
+    }
+
+    &__img-one {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 570px;
+        width: 100%;
+
+        @include media660 {
+            max-width: 328px;
+        }
+    }
+
+    &__img-group {
+        position: relative;
+
+        &--small {
+            max-width: 270px;
+
+            @include media660 {
+                max-width: 154px;
+            }
+        }
+
+        &--large {
+            max-width: 570px;
+
+            @include media660 {
+                max-width: 328px;
+            }
+        }
+    }
+
+    &__img-all {
+        height: 200px;
+
+        @include media1199 {
+            height: 100%;
+        }
+    }
+
+    &__img-small {
+        width: 100%;
+    }
+
+    &__img-large {
+        width: 100%;
+    }
+
+    &__img-info {
+        position: absolute;
+        bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 12px;
+
+        @include media660 {
+            bottom: 8px;
+            padding: 0 8px;
+        }
+    }
+
+    &__img-text,
+    &__img-stars {}
+
+    &__img-text {
+        color: $color-base-1;
+        font-family: $ff-dm-sans-700;
+    }
+
+    &__img-star {
+        width: 12px;
+        height: 12px;
+
+        @include media660 {
+            width: 7px;
+            height: 6px;
+        }
+    }
+
+
+}
+
+// Why choose section
+.why-choose {
+    background-color: $color-base-1;
+    padding: 64px 0 30px 0;
+
+    @include media600 {
+        padding: 36px 0 3px 0;
+    }
+
+    &__title {
+        color: $color-base-9;
+        font-family: $ff-domine-700;
+        text-align: center;
+        margin-bottom: 64px;
+
+        @include media600 {
+            margin-bottom: 24px;
+        }
+
+        span {
+            border-bottom: 4px solid $color-primary-5;
+
+            @include media600 {
+                display: table;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 346px;
+        width: 100%;
+        margin-bottom: 34px;
+    }
+
+    &__icon {
+        width: 52px;
+        height: 52px;
+        margin-right: 18px;
+    }
+
+    &__head {
+        color: $color-base-9;
+        font-family: $ff-domine-700;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        color: $color-base-9;
+        font-family: $ff-dm-sans-400;
+    }
+}
+
+// Customer comments section
+.customer-comments {
+    background-color: $color-base-8;
+    padding: 64px 0;
+
+    @include media600 {
+        padding: 32px;
+    }
+
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img-star {
+        margin-right: 18px;
+        width: 20px;
+        height: 19px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        @include media600 {
+            margin-right: 6px;
+            width: 10.53px;
+            height: 10px;
+        }
+    }
+
+    &__commnet {
+        max-width: 770px;
+        width: 100%;
+        color: $color-base-1;
+        font-family: $ff-domine-700;
+        font-size: 24px;
+        line-height: 44px;
+        text-align: center;
+        margin-top: 24px;
+
+        @include media600 {
+            max-width: 328px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        span {
+            color: $color-primary-5;
+        }
+    }
+
+    &__customer {
+        color: $color-base-3;
+        font-family: $ff-dm-sans-400;
+        font-size: 20px;
+        line-height: 18px;
+        letter-spacing: 0.16em;
+        text-align: center;
+        margin-top: 48px;
+
+        @include media600 {
+            font-size: 9px;
+            line-height: 18px;
+            margin-top: 24px;
+        }
+    }
+}
+
+// Feel special sction
+.feel-special {
+    padding: 64px 0;
+    background-color: $color-base-1;
+
+    @include media600 {
+        padding: 36px 0 32px 0;
+    }
+
+    &__title {
+        color: $color-base-9;
+        font-family: $ff-domine-700;
+        text-align: center;
+        margin-bottom: 64px;
+
+        @include media600 {
+            margin-bottom: 24px;
+        }
+    }
+}

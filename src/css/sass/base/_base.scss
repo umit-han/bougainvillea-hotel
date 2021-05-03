@@ -1,0 +1,31 @@
+.f-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-md-colm-center {
+
+    @include media767 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.f-md-row-start {
+
+    @include media767 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+.dn-md {
+    @include media767 {
+        display: none !important;
+    }
+
+}

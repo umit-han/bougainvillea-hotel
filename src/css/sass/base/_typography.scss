@@ -1,0 +1,70 @@
+.hero-title {
+    line-height: $lh-hero-title;
+    font-size: $fs-hero-title;
+
+    @include media600 {
+        line-height: 32px;
+        font-size: 24px;
+    }
+}
+
+.section-title {
+    line-height: $lh-section-title;
+    font-size: $fs-section-title;
+
+    @include media600 {
+        line-height: 24px;
+        font-size: 20px;
+    }
+}
+
+.hero-text {
+    line-height: $lh-hero-text;
+    font-size: $fs-hero-text;
+
+    @include media600 {
+        line-height: 16px;
+        font-size: 12px;
+    }
+}
+
+.small-title {
+    line-height: $lh-small-title;
+    font-size: $fs-small-title;
+
+    @include media600 {
+        line-height: 14px;
+        font-size: 12px;
+    }
+}
+
+.text {
+    line-height: $lh-text;
+    font-size: $fs-text;
+
+    @include media767 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+}
+
+.text1 {
+    line-height: $lh-text1;
+    font-size: $fs-text1;
+
+    @include media767 {
+        font-size: 16px;
+    }
+
+}
+
+.text2 {
+    line-height: $lh-text2;
+    font-size: $fs-text2;
+
+    @include media767 {
+        font-size: 16px;
+    }
+
+}

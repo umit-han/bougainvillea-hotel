@@ -1,0 +1,111 @@
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: $color-base-1;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto 0;
+        position: relative;
+
+        &__logo {
+            width: 144px;
+        }
+
+        &__menu {
+            display: flex;
+            justify-content: flex-start;
+
+            @include media767 {
+                display: none;
+            }
+
+            &__item {
+                margin-right: 64px;
+
+                @include media991 {
+                    margin-right: 40px;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+
+            &__link {
+                font-size: 16px;
+                color: $color-base-9;
+                font-family: 'DMSansMedium', sans-serif;
+
+            }
+        }
+
+        &__mobile {
+            display: none;
+
+            @include media767 {
+                display: block;
+            }
+
+            &__button {
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+
+            &__group {
+                background-color: $color-base-1;
+                padding: 2rem;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: -100%;
+                width: 150px;
+                height: 100%;
+                z-index: 100;
+                transition: all .4s ease-out;
+
+                &.active {
+                    right: 0;
+                }
+            }
+
+            &__close-icon  {
+                font-family: $ff-dm-sans-700;
+                font-size: 16px;
+                line-height: 20px;
+                color: $color-primary-8;
+                background-color: $color-base-2;
+                padding: 5px 9px;
+                cursor: pointer;
+                border-radius: 100%;
+                position: absolute;
+                left: 10px;
+                top: 25px;
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                margin-top: 60px;
+            }
+
+            &__item {
+                margin-bottom: 2rem;
+            }
+
+            &__link {
+                font-size: 16px;
+                color: $color-base-9;
+                font-family: 'DMSansMedium', sans-serif;
+            }
+
+        }
+    }
+}
